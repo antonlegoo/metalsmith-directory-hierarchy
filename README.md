@@ -21,7 +21,7 @@ metalsmith.use( dirHierarchy() );
 ```js
 var options = {
 	"name" : "hierarchy",		// the name of the metalsmith metadata property
-	"test" : /\.md?$/			// regex to match files to include in hierarchy
+	"test" : /\.md?$/		// regex to match files to include in hierarchy
 }
 
 metalsmith.use( dirHierarchy( options ) );
@@ -37,7 +37,7 @@ Given a folder structure like so:
 
 Would produce the object below and assign it to the global metalsmith metadata object.
 
-```json
+```
 
 { 
     children:  { 
